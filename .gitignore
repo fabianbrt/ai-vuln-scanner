@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+venv/
+
+# Output
+reports/
+*.log
+
+# VSCode (dacă folosiți)
+.vscode/

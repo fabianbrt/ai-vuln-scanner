@@ -1,0 +1,10 @@
+version: '3'
+services:
+  zap:
+    image: ghcr.io/zaproxy/zaproxy
+    container_name: zap-scanner
+    ports:
+      - "8090:8090"
+    volumes:
+      - ${PWD}/reports:/zap/wrk   
+    command: zap.sh -daemon -port 8090 -host 0.0.0.0 -config api.disablekey=true
